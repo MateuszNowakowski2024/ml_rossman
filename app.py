@@ -8,7 +8,7 @@ import io
 
 @st.cache_data
 def load_data():
-    df_all = pd.read_csv("data/all_combined_stores.csv")
+    df_all = pd.read_csv("data/combined_stores.csv")
     df_all['StateHoliday'] = df_all['StateHoliday'].astype(str).replace({'0': 0, 'a': 1, 'b': 1, 'c': 1}).astype(int)
     df_all["Date"] = pd.to_datetime(df_all["Date"])
     return df_all
