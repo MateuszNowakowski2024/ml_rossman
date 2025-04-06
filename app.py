@@ -86,6 +86,7 @@ def forecast_future(model, df_model, days_ahead, promo_dates, holiday_dates):
 
 # --- Streamlit App ---
 st.set_page_config(page_title="Store Sales Forecasting", layout="wide")
+st.image("images/rossman.png", use_container_width=True)
 st.title("Store Sales Forecasting")
 st.write("""
 This interactive app forecasts future store sales using an XGBoost model trained on historical data.
